@@ -1,0 +1,13 @@
+.slide-btn {
+    font-size: 30px;
+    width: 100px;
+    border-radius: 10px;
+    transition: all 1s;
+    text-align: center;
+}
+.slide-btn:hover {
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    transition: all 1s;
+}

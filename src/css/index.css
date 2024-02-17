@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    text-decoration: none;
+}
+
+.main-section {
+    min-height: 56vh;
+    margin: 20px 0;
+}
+
+
+label {
+    width: 80px; 
+    display: inline-block;
+}
+input {
+    width: 250px;
+    display: inline-block;
+    outline: none;
+    background-color: transparent;
+    padding: 5px 10px;
+    margin: 10px;
+    border: 1px solid;
+}
+
+button {
+    padding: 5px 10px;
+    cursor: pointer;
+    border: 1px solid;
+    width: 100px;
+    border-radius: 10px;
+    transition: all 1s;
+}
+
+button:hover {
+    background-color: black;
+    color: #fff;
+    transition: all 1s;
+}
+
+.footer {
+    margin: 20px 0;
+}
+
+main section {
+    margin: 20px 0;
+}
+.card {
+    border: 2px solid ;
+    width: 300px;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 20px;
+}
+.card img {
+    width: 280px;
+    border-radius: 10px;
+}
+.card p {
+    margin: 10px;
+    text-align: justify;
+}
+table {
+    width: 100%;
+}
+table tr td, th {
+    width: 200px;
+    border: 1px solid;
+    padding: 10px;
+}
+
+
+
+
+@media (max-width :  500px) {
+    .table {
+        width: 90vw;
+    }
+}
+
+@media (max-width :  400px) {
+    .register {
+        width: 90vw;
+    }
+    .register input {
+        width: 50vw;
+    }
+}
