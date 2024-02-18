@@ -1,9 +1,9 @@
 import { useState } from "react"
 import axios from 'axios'
+import { useNavigate } from "react-router-dom"
 let Registration = () => {
     let [input, setInput] = useState({})
-
-
+    let myNav = useNavigate()
     function inputsubmit(e) {
         let name = e.target.name
         let value = e.target.value
@@ -27,7 +27,12 @@ let Registration = () => {
                 }
                 else {
                    
-                    axios.post('http://127.0.0.1:8000/api/users/', input).then((res)=> alert("Data Save") )
+                    axios.post('http://localhost:8000/api/user/users/', input).then(
+                        (res)=> {
+                            alert("Data Save")
+                            myNav("/")
+
+                        } )
                 }
             }
         }

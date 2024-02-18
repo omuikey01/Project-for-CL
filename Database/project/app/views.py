@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from rest_framework import viewsets
-from .models import Student
-from .serializers import UserSerializer
+from .models import *
+from .serializers import *
 
 # Create your views here.
 
@@ -10,3 +10,11 @@ from .serializers import UserSerializer
 class UserViewSet(viewsets.ModelViewSet):
     queryset = Student.objects.all()
     serializer_class = UserSerializer
+
+class AdminLoginViewSet(viewsets.ModelViewSet):
+    queryset = AdminLogin.objects.all()
+    serializer_class = AdminLoginSerializer
+
+class TaskViewSet(viewsets.ModelViewSet):
+    queryset = StudentTask.objects.all()
+    serializer_class = TaskSerializer
